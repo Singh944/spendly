@@ -25,8 +25,10 @@
             <a href="{{ url_for('register') }}" class="btn-primary">
                 Create free account
             </a>
-            <a href="{{ url_for('login') }}" class="btn-ghost">
-                See how it works
+            <a href="#" class="btn-primary" id="openVideo">
+    See how it works
+</a>
+</a>
             </a>
         </div>
 
@@ -130,5 +132,20 @@
         </a>
     </div>
 </section>
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="modal-close" id="closeModal">&times;</span>
 
+        <div class="video-wrapper">
+            <iframe
+                id="videoFrame"
+                src=""
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
 {% endblock %}
